@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp/etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="script-src">
+            <values>
+                <value id="assets-adobedtm" type="host">*.cense.ai</value>
+            </values>
+        </policy>
+         <policy id="style-src">
+            <values>
+                <value id="bootstrapcdn" type="host">*.cense.ai</value>
+                <value id="bootstrapcdn1" type="host">*.googleapis.com</value>
+            </values>
+        </policy>
+
+          <policy id="media-src">
+            <values>
+                <value id="getfirebug" type="host">*.cense.ai</value>
+            </values>
+        </policy>
+
+        <policy id="connect-src">
+            <values>
+                <value id="doubleclick" type="host">*.cense.ai</value>                
+            </values>
+        </policy>
+         <policy id="img-src">
+            <values>
+                <value id="googleadservices" type="host">*.cense.ai</value>
+                <value id="googleadservices11" type="host">data:</value>
+            </values>
+        </policy>
+         <policy id="font-src">
+            <values>
+                <value id="fontawesome" type="host">*.fontawesome.com</value>
+                <value id="bootstrapcdn" type="host">*.bootstrapcdn.com</value>
+                <value id="google" type="host">*.fonts.googleapis.com</value>
+                <value id="gstatic" type="host">*.gstatic.com</value>
+            </values>
+        </policy>
+        <policy id="frame-src">
+            <values>
+                <value id="authorize" type="host">*.cense.ai</value>
+                <value id="razorpay" type="host">*.razorpay.com</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>

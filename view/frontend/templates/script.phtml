@@ -1,0 +1,24 @@
+<?php 
+$customerEmail='';
+
+if($block->getCustomerIsLoggedIn()){
+    $customerEmail=$block->getCustomerEmail();
+}
+
+$chat_key=$block->getLicenceKey();
+$username=$block->getUserName();
+
+?>
+<script src="https://resource.cense.ai/js/app.js"></script>
+<link href="https://resource.cense.ai/css/app.css" rel="stylesheet">
+<bot-chat></bot-chat>
+       
+        <script>
+        var widget = GenerateWidget({
+            source: 'Web',
+            license_key: '<?php echo $chat_key;?>',
+            username: '<?php echo $username; ?>',
+            magento_customer_data: '<?php echo $customerEmail;?>'
+        })
+</script>
+

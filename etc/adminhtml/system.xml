@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Censeaiinc Team
+ * @copyright Copyright (c) 2021 Censeaiinc 
+ * @package Censeaiinc_Cense
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="censeaiinc" translate="label" sortOrder="105">
+            <label>Censeaiinc</label>
+        </tab>
+        <section id="censeaiinc" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Settings</label>
+            <tab>censeaiinc</tab>
+            <resource>Censeaiinc_Cense::contact_config</resource>
+             <group id="general" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Options</label>
+                
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Bot</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="licence_key" translate="label comment" type="textarea" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Licence Key</label>
+                    <depends>
+                        <field id="*/censeaiinc/enabled">1</field>
+                    </depends>
+                    <comment>
+<![CDATA[
+<p style="font-weight: bold;">To get your license key, register yourself on <a href="https://portal.cense.ai/bot/register" target="_blank">Cense AI</a></p> 
+]]>
+</comment>
+                </field>
+              
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,8 @@
+<?php 
+ $baseURL=$this->getBaseUrl();
+ $cartUrl=$baseURL.'checkout/cart/';
+?>
+<script type="text/javascript">
+	url = '<?php echo $cartUrl; ?>';
+	window.location.replace(url);
+</script>
