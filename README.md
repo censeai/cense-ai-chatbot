@@ -52,7 +52,7 @@ If you still face any issues **[get in contact](https://cense.ai/contact-us)** w
 
 Under your root folder, run the following command lines:
 
-- composer require akshaybadhe/cense-ai-chatbot-test
+- composer require censeai/cense-ai-chatbot
 - php bin/magento setup:upgrade
 - php bin/magento setup:di:compile
 - php bin/magento cache:flush
