@@ -3,11 +3,11 @@
 	"description":"Cense can help Online Ecommerce Stores Owners in Capturing Leads and Provide Excellent Customer Support on your Ecommerce Store using Conversational AI.",
 	"keywords": ["Cense-AI", "Cense-Chatbot"],	
 	"require": {
-		"php": "~7.4",
+		"php": ">=7.4",
 		"magento/framework": "103.0.*"
 	},
 	"type": "magento2-module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": [
 		"OSL-3.0",
 		"AFL-3.0"

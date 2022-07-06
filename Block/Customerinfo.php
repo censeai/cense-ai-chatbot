@@ -49,7 +49,7 @@ class Customerinfo  extends \Magento\Framework\View\Element\Template
     {
 
        $six_digit_random_number = random_int(100000, 999999);
-       $this->session->start();
+      //  $this->session->start();
         
         if(strlen($this->session->getUserName())<1)
         {
