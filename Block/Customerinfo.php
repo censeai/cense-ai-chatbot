@@ -11,13 +11,13 @@ class Customerinfo  extends \Magento\Framework\View\Element\Template
     public function __construct(
      \Magento\Framework\View\Element\Template\Context $context,
      \Magento\Framework\App\Http\Context $httpContext,
-     \Magento\Framework\Session\SessionManagerInterface $session,
+    //  \Magento\Framework\Session\SessionManagerInterface $session,
      \Magento\Customer\Model\Session $customerSession,
      array $data = []
     ) {
      $this->httpContext = $httpContext;
      $this->_customerSession = $customerSession;
-     $this->session = $session;
+    //  $this->session = $session;
      parent::__construct($context, $data);
     }
 
@@ -48,14 +48,14 @@ class Customerinfo  extends \Magento\Framework\View\Element\Template
     public function getUserName()
     {
 
-       $six_digit_random_number = random_int(100000, 999999);
+      //  $six_digit_random_number = random_int(100000, 999999);
       //  $this->session->start();
         
-        if(strlen($this->session->getUserName())<1)
-        {
-          $this->session->setUserName($six_digit_random_number);
-        } 
-       return  $this->session->getUserName();
+      //   if(strlen($this->session->getUserName())<1)
+      //   {
+      //     $this->session->setUserName($six_digit_random_number);
+      //   } 
+      //  return  $this->session->getUserName();
     }
 
 
